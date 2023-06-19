@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-client {
+  background: #0a0a0a;
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  border: 7px solid #f9f906;
+  box-shadow: 0 6px 13px 0px #f9f906;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.card-client:hover {
+  transform: translateY(-10px);
+}
+
+h2 {
+  padding: 10px;
+}
+
+.top-icons {
+  padding: 10px 20px 20px 20px;
+}
+
+.user-picture {
+  display: flex;
+  justify-content: center;
+}
+
+.user-picture-container {
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%;
+  max-width: 15rem;
+ 
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-picture-container img {
+  width: 100%;
+}
+
+.user-picture-container img:hover {
+  transform: scale(1.2);
+}
+
+.user-picture-container svg {
+  width: 2.5rem;
+  fill: currentColor;
+}
+
+.name-client {
+  font-weight: 600;
+  font-size: 18px;
+  padding: 20px;
+}
+
+.name-client span {
+  display: block;
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.social-media:before {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 2px;
+}
+
+.social-media a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-media a svg {
+  width: 1.1rem;
+  fill: currentColor;
+}
+
+/*-- Tooltip Social Media --*/
+.tooltip-social {
+  background: #262626;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 0.5rem 0.4rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -90%);
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+
+.tooltip-social:after {
+  content: " ";
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  border: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  transform: translate(-50%, 100%);
+}
+
+.social-media a .tooltip-social:after {
+  border-top-color: #262626;
+}
+
+.social-media a:hover .tooltip-social {
+  opacity: 1;
+  transform: translate(-50%, -130%);
+}
+
+a {
+  font-size: 45px;
+  list-style: none;
+  text-decoration: none;
+  color: #eaede9;
+  justify-content: space-around;
+ 
+
+}
+
+a:hover {
+  color: #25ef06;
+  transform: scale(1.2);
+}
+
+h2:hover {
+  color: gray;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+span:hover {
+  color: gray;
+  cursor: pointer;
+
+}
+
+p:hover {
+  color: gray;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+
+.zap:hover {
+  color: #25ef06;
+  transform: scale(1.2);
+}
+
+.insta:hover {
+  color: #ed090c;
+  transform: scale(1.2);
+}
+
+.face:hover {
+  color: #3560ee;
+  transform: scale(1.2);
+}
+
+.email:hover {
+  color: #f66d05;
+  transform: scale(1.2);
+}
+
+footer {
+  font-size: 18px;
+}
+
+footer:hover {
+  transform: scale(1.2);
+}
+
+.telefone {
+  font-size: 12px;
+}
+
+
